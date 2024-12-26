@@ -16,6 +16,12 @@ Converted MLC model files can be found [here](https://github.com/ggjy/EdgeDevice
 
 #### Result CSV File
 
+```
+pip install opencompass==0.3.1
+
+opencompass --datasets commonsenseqa_7shot_cot_gen_734a22 FewCLUE_chid_gen humaneval_gen gsm8k_gen truthfulqa_gen bbh_gen  --hf-type base --hf-path ./EdgeDeviceLLMCompetition-TeamNG-Track2 --model-kwargs device_map='auto' trust_remote_code=True --max-out-len 100 --max-seq-len 512 -r latest --max-num-workers 8
+```
+
 Check results.csv [here](https://github.com/ggjy/EdgeDeviceLLMCompetition-TeamNG-Track2/blob/main/results.csv).
 
 ### Training data
